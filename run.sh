@@ -8,8 +8,10 @@ ENV_FILE=${BASEDIR}/env
 
 . $ENV_FILE
 
-docker run -d \
+docker run \
     --name mysql \
+    -d \
+    --restart=unless-stopped \
     -e MYSQL_ROOT_PASSWORD \
     -e MYSQL_DATABASE \
     -e MYSQL_USER \
