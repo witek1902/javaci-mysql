@@ -1,0 +1,4 @@
+export MYSQL_ROOT_PASSWORD=admin123
+export MYSQL_DATABASE=sonar
+export MYSQL_USER=sonar
+export MYSQL_PASSWORD=sonar
