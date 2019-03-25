@@ -20,5 +20,5 @@ docker run \
     -p 3306:3306 \
     -u $(id -u mysql):$(id -g mysql) \
     mysql:5.7.25 \
-    --net_buffer_length=10485760 \
+    --net_buffer_length=1048576 \
     --max_allowed_packet=104857600
