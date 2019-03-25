@@ -16,7 +16,7 @@ docker run \
     -e MYSQL_DATABASE \
     -e MYSQL_USER \
     -e MYSQL_PASSWORD \
-    -v /var/lib/mysql:/var/lib/mysql \
+    -v /opt/mysql:/var/lib/mysql \
     -p 3306:3306 \
     -u $(id -u mysql):$(id -g mysql) \
     mysql:5.7.25 \
