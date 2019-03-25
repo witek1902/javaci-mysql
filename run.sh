@@ -18,6 +18,7 @@ docker run \
     -e MYSQL_PASSWORD \
     -v /var/lib/mysql:/var/lib/mysql \
     -p 3306:3306 \
+    -u $(id -u mysql):$(id -g mysql) \
     mysql:5.7.25 \
     --net_buffer_length=10485760 \
     --max_allowed_packet=10485760
